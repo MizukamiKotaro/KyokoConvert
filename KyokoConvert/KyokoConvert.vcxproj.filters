@@ -16,15 +16,41 @@
     <Filter Include="ソリューション項目">
       <UniqueIdentifier>{9b4df983-e38c-4d86-8596-02ae632d64d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ConvertEngine">
+      <UniqueIdentifier>{4f0bd1ce-e4f0-4862-a7eb-9b08b6e6444b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConvertEngine\Converter">
+      <UniqueIdentifier>{85ab61f4-4f88-4883-88da-b8739036e082}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConvertEngine\Converter\TextureConverter">
+      <UniqueIdentifier>{721ef2ad-9715-4411-b111-83080c4eb748}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ConvertEngine\Converter\StringConverter">
+      <UniqueIdentifier>{915b1a8f-3e7b-41d4-ac11-3f247a9f3ff2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertEngine\Converter\TextureConverter\TextureConverter.cpp">
+      <Filter>ConvertEngine\Converter\TextureConverter</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertEngine\Converter\StringConverter\StringConverter.cpp">
+      <Filter>ConvertEngine\Converter\StringConverter</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig">
       <Filter>ソリューション項目</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConvertEngine\Converter\TextureConverter\TextureConverter.h">
+      <Filter>ConvertEngine\Converter\TextureConverter</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertEngine\Converter\StringConverter\StringConverter.h">
+      <Filter>ConvertEngine\Converter\StringConverter</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
