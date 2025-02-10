@@ -4,6 +4,7 @@
 #include <Windows.h>
 #pragma comment(lib, "winmm.lib")
 #include "ConvertEngine/Converter/TextureConverter/TextureConverter.h"
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
@@ -25,7 +26,11 @@ int main(int argc, char* argv[])
 	TextureConverter converter;
 
 	// テクスチャ変換
-	converter.ConvertTextureWICToDDS(argv[kFilePath]);
+	for (int i = kFilePath; i < argc; ++i)
+	{
+		std::cout << "argv[" << i << "]: " << argv[i] << std::endl;
+		converter.ConvertTextureWICToDDS(argv[i]);
+	}
 
 	// COM ライブラリの終了
 	CoUninitialize();
